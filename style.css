@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2? family=Oswald:wght@200;300;400;500;600;700&family=Stint+Ultra+Condensed&display=swap');
+:root{
+    --font-family: 'Stint Ultra Condensed', cursiva;
+}
+body {
+    margin: 0;
+    padding:0;
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--font-family);
+    font-size: 1.25rem;
+    background-color: #F0EEED;
+    letter-spacing: 1px;
+}
+.navbar {
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 5rem 0 0 ;
+    font-family: var(--font-family);
+    gap: 5%;
+    font-size: 2rem;
+    align-items: baseline;
+}
+#logo {
+    color: #C38154;
+    text-decoration: none;
+    border: 3px solid #FEE8B0;
+    font-size: 2.5rem;
+    padding-right: 2%; 
+    padding-left: 2%;
+    letter-spacing: 3px;
+    margin-right: 2%;
+}
+#inicio {
+    color: #fff;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+#inicio:hover {
+    color: #F97B22;
+    text-decoration: underline;
+}
+#programacoes{
+    color: #fff;
+    text-decoration: none;
+}
+#programacoes:hover{
+    color: #F97B22;
+    text-decoration: underline;
+}
+#contato {
+    color: #fff;
+    text-decoration: none;
+}
+#contato:hover {
+    color: #F97B22;
+    text-decoration: underline;
+    
+}
+#veiculos {
+    color: #fff;
+    text-decoration: none;
+}
+#veiculos:hover {
+    color: #F97B22;
+    text-decoration: underline;
+
+}
+#sobrenos {
+    color: #fff;
+    text-decoration: none;
+}
+#sobrenos:hover {
+    color: #F97B22;
+    text-decoration: underline;
+}
+.titulos {
+    color:#482121;
+    text-align: center;
+    font-family:var(--font-family);
+    letter-spacing: 5px;
+    border-bottom: 3px solid #7C9070;
+    font-size: 1.2rem;
+}
+.content {
+    height: 500px;
+    width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #7C9070;
+    /* margin-top: 2%; */
+}
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+.bar {
+    /* width: 70px; */
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.bar:hover {
+    background: #fff;
+}
+input {
+    display: none;    
+}
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}    
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+} 
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+.rodape-inicio {
+    background: black;
+    color: #fff;      
+    text-transform: lowercase;    
+}
+@media screen and (min-width: 0) { 
+    .navbar {
+        justify-content: center;            
+        /* margin-left: 2rem; */
+        font-size: 0.75rem;
+        padding: 1rem 0 1rem 0;
+   }
+}
+
+@media screen and (min-width: 768px) { 
+    .navbar {
+        padding-left: 2rem;
+        font-size: 1.5rem;                   
+    }
+}
+@media screen and (min-width: 820px) {
+    .navbar {
+        padding: 1rem 4rem 1rem  0 ;
+        justify-content: space-between;
+    }    
+}
+@media screen and (min-width: 0) {
+    #logo {
+        display: none;        
+    }    
+}
+@media screen and (min-width: 768px) {
+    #logo {
+        display: block;
+        margin-left: 3rem;
+    }    
+}
+@media screen and (min-width: 820px) {
+    #logo {
+        display: block;
+        margin-left: 1.5rem;
+    }    
+}
+@media screen and (min-width:0) {
+    .bar {
+        width: 40px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .bar {
+        width: 80px;
+    }    
+}
+@media screen and (min-width: 0) {
+    .content {
+        width: 350px;        
+        height: 220px;
+        margin-top:-19rem;      
+    }
+}
+@media screen and (min-width: 200px) {
+    .content {
+        width: 400px;        
+        height: 220px;
+        margin-top:-12rem;      
+    }
+}
+@media screen and (min-width: 768px) {
+    .content {
+        height: 350px;
+        width: 550px; 
+        margin-top: -20%;
+    }
+}
+@media screen and (min-width: 820px) {
+    .content {
+        width: 650px;  
+        height: 450px; 
+        margin-top: -2rem;     
+    }
+}
+
+@media screen and (min-width: 0) {
+    .rodape-inicio {
+        margin-top: 80%;
+        text-align: center;
+    }    
+}
+@media screen and (min-width: 768px) {
+    .rodape-inicio { 
+        display: flex;
+        margin-top: 40%;
+        padding-left: 45%;
+    }
+}
+/* px de ipad  */
+@media screen and (min-width: 820px) { 
+    .rodape-inicio { 
+        display: flex;
+        margin-top: 40%;
+        padding-left: 45%;
+    }
+}
+/* --------------------pag- contatos -------------------*/
+
+.lista-contatos {
+    margin-top: 5%;
+    margin-left: 35%;
+    width: max-content;
+    gap: 10px;
+    border: 3px solid #7C9070;
+    border-radius: 15px;
+    padding: 10px;
+    color: #9CA777;
+    font-family: var(--font-family);
+    font-size: 2rem;
+    text-align: left;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;    
+}
+#instagram {
+    color: black;
+    text-decoration: none;
+    gap: 5px;
+}
+#instagram:hover {
+    color: #9CA777;
+    text-decoration: underline;
+}
+#telefone{
+    color: black;
+    text-decoration: none;
+}
+/* #telefone:hover{
+    color: #643843; 
+}*/
+#email{
+    color: black;
+    text-decoration: none;
+    
+}
+#email:hover{
+color: #7C9070;
+}
+#whats{
+    color: black;
+    text-decoration: none;
+}
+#whats:hover{
+    color: #9CA777;
+    text-decoration: underline;
+}
+.img-instagram{
+    max-width: 20px;
+    max-height: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.img-tel{
+    max-width: 20px;
+    max-height: 20px;
+}
+.img-email{
+    max-width: 20px;
+    max-height: 20px;
+}
+.img-whats{
+    max-width: 20px;
+    max-height: 20px;
+}
+#rodape-contato{
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 1.56 rem 5rem;
+    text-transform:lowercase;
+}
+@media screen and (min-width: 0) {
+    .lista-contatos {
+        margin-left: 10% ;
+    }
+}        
+@media screen and (min-width: 768px) {
+    .lista-contatos {
+        margin-left: 37.5%;        
+    }        
+}
+@media screen and (min-width: 0) {
+    #rodape-contato {
+        margin-top: 40%;
+    }
+}
+        
+@media screen and (min-width: 768px) {
+    #rodape-contato {
+        margin-top: 8%;                
+    }        
+}
+/* ----------------------------sobre nos ------------------------*/
+.texto-sobrenos{
+    margin-left: 5% ;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-size: 1.6rem;
+    color: black;
+    border: 4px solid #7C9070;
+    border-radius: 15px;
+    padding-left: 10px;
+    
+}
+#rodape-sobrenos {
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 1.rem 5rem;
+    text-transform:lowercase;
+    margin-top: 5%;
+}
+
+/* --------------------serviços-------------------------------- */
+
+.eventos {       
+    margin-top: 5%;
+    width: max-content;
+    margin-left: 40%;
+    border-radius: 10px;
+    border: 3px solid #7C9070; 
+    line-height: 350%;
+    padding: 0 1.5rem;
+}
+.eventos_nomes{
+    color: black;
+    font-size: 2rem;
+    margin-top: 5%;
+}
+
+#rodape-servico {
+    background: black;
+    color: #fff;
+    margin-top: 12.5%;
+    text-align: center;
+    padding: 1.56 rem 5rem;
+    text-transform:lowercase;
+}
+@media screen and (min-width: 0) {
+    .eventos {
+        margin-left: 20%;
+    }
+}        
+@media screen and (min-width: 768px) {
+    .eventos {
+        margin-left: 40%;        
+    }        
+}
+@media screen and (min-width: 0) {
+    #rodape-servico {
+        margin-top: 52%;
+    }
+}
+        
+@media screen and (min-width: 768px) {
+    #rodape-servico {
+        margin-top: 11%;                
+    }        
+}

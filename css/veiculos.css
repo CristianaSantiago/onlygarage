@@ -1,0 +1,85 @@
+
+.carros {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 6rem;    
+}
+.carro {
+    background: #F6FFDE;   
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    /* margin-left: 20rem; */
+    width: 25% -5rem;
+    height: 390px;
+    border: 3px solid #7C9070;
+    border-radius: 11px;
+}
+
+.carro__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0px;
+    border-bottom: 4px solid #9CA777;
+    background: #7C9070;
+    border-radius: 5px;
+}
+.carro__descricao {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 0 auto;       
+}
+.carro__botao {
+    margin-left: 90px;    
+    background: #9CA777;
+    color: #fff;
+    border-radius: 5px;    
+    padding: 5px;
+    cursor: pointer; 
+    border: none;     
+}
+.carro__botao:hover {
+    background: #E7CBCB;
+    color: black;    
+}
+#buick-lesabre {
+    background-position: center;      
+}
+#thunderbird {
+    background-position: center;
+    height: 199.8px;    
+}
+#mustang {
+    background-position: center;
+    height: 199.8px;
+}
+/* #minicooper {
+    background-position: center;
+    height: 199.8px;
+} */
+#karmann {
+    height: 199.8px;
+}
+#rodape-veiculos {
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 1.56 rem 5rem;
+    text-transform:lowercase;
+    /* margin-top: 35%; */
+}
+@media screen and (min-width:0){
+    .carro { 
+        margin-left: -2rem; 
+        width: 270px;   
+    }    
+}
+@media screen and (min-width:768px){
+    .carro { 
+        margin-left: -2rem; 
+        width: 300px;   
+    }    
+}
+
+
